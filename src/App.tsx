@@ -1,30 +1,24 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import DocViewer, { DocViewerRenderers } from "react-doc-viewer";
 
 function App() {
 
-  const docs = [
-    {
-      uri:
-        "http://localhost:9000/uploads/ULRYB3ATJ56B/Screenshot%202021-04-28%20at%2014.04.23.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=minio%2F20210507%2F%2Fs3%2Faws4_request&X-Amz-Date=20210507T142426Z&X-Amz-Expires=432000&X-Amz-SignedHeaders=host&X-Amz-Signature=761187860be22801088ab8c212733f7f52af8f62d638f1341ee2ae4c18944251"
-      // "http://localhost:9000/uploads/6QK5HJ84MAEM/RAS-118_CompanyCodes__SalesOffices.xlsx?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=minio%2F20210507%2F%2Fs3%2Faws4_request&X-Amz-Date=20210507T110429Z&X-Amz-Expires=432000&X-Amz-SignedHeaders=host&X-Amz-Signature=c20f9b77ffdc1a15910cea5acd3420b6583a1d4d38ce5716da30f1d0ea4315d5"
-      // "https://res.cloudinary.com/cloudinaryforme/image/upload/v1618339571/workplace-1245776_1920_i9ayae.jpg"
-    },
-
-    {
-      uri:
-        "https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf"
-    }
-  ];
-
 
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-    
+    <div className="App pt-2">
+      <h1 className='text-gray-800 text-4xl'>Hello CodeSandbox</h1>
 
+      <div className="sm:flex justify-between items-start max-w-4xl m-auto mt-8">
+        <div className="w-2/6 border shadow-lg" style={{height: 400}}></div>
+
+        <p className='w-4/6 px-3'>
+          <input type="file" className='bg-purple-300 rounded-md mb-2 cursor-pointer' /> <br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, iure perspiciatis commodi a excepturi itaque saepe ducimus omnis doloremque molestias vitae distinctio iste veritatis harum illo numquam nostrum ex pariatur?
+          Cumque, impedit. Vero amet modi laudantium quo fugiat veritatis corporis asperiores mollitia perferendis minus ut molestias veniam in, repellat unde velit magnam perspiciatis rerum maiores delectus harum, illum distinctio. Repellendus.
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis minus iste at dolor qui! Fugiat ratione consectetur beatae eum sed maiores veniam animi accusantium! Pariatur magni doloribus similique dolorem atque!</p>
+      </div>
+      
     </div>
   );
 }
